@@ -225,7 +225,7 @@ public class ScreenContainer<T extends ScreenFragment> extends ViewGroup {
           }
         }
       });
-      mCurrentTransaction.commitAllowingStateLoss();
+      mCurrentTransaction.commitNowAllowingStateLoss();
       mCurrentTransaction = null;
     }
   }
